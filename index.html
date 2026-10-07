@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="本草寻踪 · TCM Culture Bridge｜中医药文化数字传播平台原型" />
+    <title>本草寻踪 · TCM Culture Bridge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="navbar" id="top">
+      <a class="brand" href="#home" aria-label="本草寻踪首页"><span class="brand-mark">本</span><span><strong>本草寻踪</strong><small>TCM CULTURE BRIDGE</small></span></a>
+      <nav id="navLinks"><a href="#home" data-i18n="navHome">首页</a><a href="#map" data-i18n="navMap">文化地图</a><a href="#stories" data-i18n="navStories">本草故事</a><a href="#about" data-i18n="navAbout">关于我们</a></nav>
+      <button class="language" id="languageToggle" aria-label="Switch language">中 <span>/</span> EN</button>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">DIGITAL HERBAL CULTURE ATLAS</p>
+          <h1 data-i18n="heroTitle">沿着中国地图，<br />寻找一味本草，<br /><em>读懂一方文化。</em></h1>
+          <p class="hero-en" data-i18n="heroEn">Discover Chinese Herbal Culture Through the Map of China.</p>
+          <p class="hero-desc" data-i18n="heroDesc">面向年轻人与世界的中医药文化数字传播平台。我们从一片土地、一味本草，打开中国传统文化的当代表达。</p>
+          <div class="hero-actions"><a href="#map" class="btn primary" data-i18n="explore">开始探索 <span>→</span></a><button class="btn text-btn" id="heroEnglish" data-i18n="seeEnglish">查看英文传播版 ↗</button></div>
+          <div class="hero-route" aria-label="用户传播路径"><span>MAP</span><i>→</i><span>HERB</span><i>→</i><span>STORY</span><i>→</i><span>WORLD</span></div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="mountain m3"></div>
+          <div class="hero-map" aria-hidden="true"><div class="map-silhouette"></div><i class="hero-pin p1"></i><i class="hero-pin p2"></i><i class="hero-pin p3"></i><i class="hero-pin p4"></i></div>
+          <p class="art-caption">HERBS · LAND · STORIES</p>
+        </div>
+      </section>
+
+      <section class="stats section"><div class="stat"><b>5</b><p data-i18n="statRegions">文化地区</p></div><div class="stat"><b>5</b><p data-i18n="statHerbs">本草文化案例</p></div><div class="stat"><b>2</b><p data-i18n="statLang">语言支持</p></div><div class="stat"><b>30<small>s</small></b><p data-i18n="statVideo">短视频内容</p></div></section>
+
+      <section class="map-section section" id="map">
+        <div class="section-heading reveal"><p class="eyebrow" data-i18n="mapEyebrow">EXPLORE BY PLACE</p><h2 data-i18n="mapTitle">一张地图，六方本草文化</h2><p data-i18n="mapIntro">点击地图上的文化节点，开启一段跨越山川的本草叙事。</p></div>
+        <div class="map-layout reveal">
+          <div class="map-board"><div class="map-silhouette large"></div><div class="map-lines"></div><div id="mapPins" class="map-pins"></div><span class="map-label north">NORTHEAST</span><span class="map-label west">SILK ROAD</span><span class="map-label east">JIANGNAN</span></div>
+          <aside class="region-panel" id="regionPanel" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section class="flow section"><p class="eyebrow" data-i18n="flowEyebrow">A CULTURAL JOURNEY</p><div class="flow-items"><div><span>01</span><b data-i18n="flow1">地图找到文化</b></div><i>→</i><div><span>02</span><b data-i18n="flow2">本草连接故事</b></div><i>→</i><div><span>03</span><b data-i18n="flow3">双语传播世界</b></div></div><p class="flow-note" data-i18n="flowNote">点击任一地区 → 进入本草详情 → 一键切换英文或分享文化卡片</p></section>
+
+      <section class="stories section" id="stories"><div class="section-heading reveal"><p class="eyebrow" data-i18n="storiesEyebrow">HERBAL STORIES</p><h2 data-i18n="storiesTitle">本草的土地记忆</h2><p data-i18n="storiesIntro">每一种本草，都是一方水土与一段文化的相遇。</p></div><div class="herb-grid" id="herbGrid"></div></section>
+
+      <section class="myths section"><div class="myth-header"><p class="eyebrow" data-i18n="mythEyebrow">CULTURAL CLARITY</p><h2 data-i18n="mythTitle">你真的了解中医药吗？</h2><p data-i18n="mythIntro">TCM Myth or Fact? 从文化视角重新认识中医药。</p></div><div class="myth-grid" id="mythGrid"></div></section>
+
+      <section class="videos section"><div class="section-heading reveal"><p class="eyebrow" data-i18n="videoEyebrow">CULTURE IN 30 SECONDS</p><h2 data-i18n="videoTitle">30秒认识一味本草</h2><p data-i18n="videoIntro">用年轻化影像语言，轻松遇见本草文化。</p></div><div class="video-grid" id="videoGrid"></div></section>
+
+      <section class="about section" id="about"><div class="about-lead"><p class="eyebrow" data-i18n="aboutEyebrow">ABOUT THE PROJECT</p><h2>本草寻踪<br /><em>TCM Culture Bridge</em></h2><p data-i18n="vision">让世界通过一味本草，认识一个中国。</p><p class="about-desc" data-i18n="mission">通过数字地图、多语言内容和年轻化传播方式，让中医药文化更加容易理解、更加容易传播。</p></div><div class="team"><h3 data-i18n="teamTitle">跨学科团队</h3><div id="teamGrid" class="team-grid"></div></div></section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">本</span><span><strong>本草寻踪</strong><small>TCM CULTURE BRIDGE</small></span></a><p data-i18n="footer">一味本草 · 一方文化 · 一座连接世界的桥</p><a href="#top" class="backtop">↑ TOP</a></footer>
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true"><div class="modal-content"><button class="modal-close" id="modalClose" aria-label="关闭">×</button><div id="modalBody"></div></div></div>
+    <script src="data.js"></script><script src="professional-herbs.js"></script><script src="app.js"></script>
+  </body>
+</html>
